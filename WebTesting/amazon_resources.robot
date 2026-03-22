@@ -7,7 +7,8 @@ ${URL}                       https://www.amazon.com.br/
 ${MENU_ELETRONICOS}          (//a[contains(text(),'Eletrônicos')])[1]
 ${HEADER_ELETRONICOS}        (//span[contains(text(),'Eletrônicos e Tecnologia')])[1]
 ${GLOBAL_SEARCH}             (//input[@id='twotabsearchtextbox'])[1]
-${SEARCH}                    #nav-search-submit-button
+${SEARCH}                    //input[@id='nav-search-submit-button']
+
 
 
 
@@ -49,7 +50,12 @@ Digitar o nome de produto "${PRODUCT}" no campo de pesquisa
     Input Text      locator=${GLOBAL_SEARCH}    text=${PRODUCT}
 
  Clicar no botão de pesquisa
-    Click Element            locator=${SEARCH} 
+    Click Element                  locator=${SEARCH} 
+
+ Verificar o resultado da pesquisa, se está listando o produto "${PRODUCT}"
+    Wait Until Element Is Visible     locator=(//span[contains(text(),'${PRODUCT}')])[1]
+   
+    
 
 
     

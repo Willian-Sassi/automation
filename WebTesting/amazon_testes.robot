@@ -4,7 +4,7 @@ Resource       amazon_resources.robot
 Test Setup     Abrir o navegador
 Test Teardown  Fechar o navegador
 
-Willian
+
 
 *** Test Cases ***
 Caso de Teste 01 - Acesso ao menu "Eletrônicos"
@@ -25,5 +25,5 @@ Caso de Teste 01 - Acesso ao menu "Eletrônicos"
      [Tags]           busca_produtos  lista_busca
      Acessar a home page do site Amazon.com.br 
      Digitar o nome de produto "Xbox Series S" no campo de pesquisa
-#     Clicar no botão de pesquisa
-#     Verificar o resultado da pesquisa, se está listando o produto pesquisado
+     Clicar no botão de pesquisa
+     Verificar o resultado da pesquisa, se está listando o produto "Xbox Series S"
