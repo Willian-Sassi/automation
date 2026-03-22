@@ -4,6 +4,8 @@ Resource       amazon_resources.robot
 Test Setup     Abrir o navegador
 Test Teardown  Fechar o navegador
 
+Willian
+
 
 *** Test Cases ***
 Caso de Teste 01 - Acesso ao menu "Eletrônicos"
