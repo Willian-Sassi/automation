@@ -3,13 +3,12 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
+${BROWSER}                   chrome  # para rodar em outro browser: robot -v BRWOSER:firefox + test suite. 
 ${URL}                       https://www.amazon.com.br/
 ${MENU_ELETRONICOS}          (//a[contains(text(),'Eletrônicos')])[1]
 ${HEADER_ELETRONICOS}        (//span[contains(text(),'Eletrônicos e Tecnologia')])[1]
 ${GLOBAL_SEARCH}             (//input[@id='twotabsearchtextbox'])[1]
 ${SEARCH}                    //input[@id='nav-search-submit-button']
-
-
 
 
 
